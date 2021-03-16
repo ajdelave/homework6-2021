@@ -15,8 +15,9 @@ header{
   /*Your  code here again.*/
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  
+
 }
 
 /*Requirement 3*/
@@ -87,7 +88,7 @@ header{
   animation-name: logo_grow;
   animation-duration: 15s;
   animation-iteration-count: 1;
- 
+
 }
 
 /*Keyframes for animation*/
@@ -159,7 +160,7 @@ header{
   /*Requirement 16*/
   .price {
     align-items: flex-end;
-    flex-wrap: nowrap;
+
   }
   /*Requirement 17*/
   .package {
