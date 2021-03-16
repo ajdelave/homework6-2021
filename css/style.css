@@ -15,9 +15,8 @@ header{
   /*Your  code here again.*/
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  
-
 }
 
 /*Requirement 3*/
@@ -87,22 +86,25 @@ header{
    /*Your code here.*/
   animation-name: logo_grow;
   animation-duration: 15s;
+  -webkit-animation-duration: 15s;
   animation-iteration-count: 1;
-
+  opacity: 0;
+  width: 25px;
 }
 
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
-  0%   {opacity: 0; width: 25px;}
-  100% {opacity: 1; width: 420px;}
+  from {opacity: 0; width: 25px;}
+  to {opacity: 1; width: 420px;}
+  
 }
 
 @keyframes logo_grow{
   /*Your code here.*/
-  0%   {opacity: 0; width: 25px;}
-  100% {opacity: 1; width: 420px;}
-} 
+  from {opacity: 0; width: 25px;}
+  to {opacity: 1; width: 420px;}
+}
 
 @media screen and (min-width: 850px){
 
@@ -160,7 +162,7 @@ header{
   /*Requirement 16*/
   .price {
     align-items: flex-end;
-
+    flex-wrap: nowrap;
   }
   /*Requirement 17*/
   .package {
